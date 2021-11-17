@@ -1,9 +1,9 @@
 <div class="container">
-    <!--
+
     <div class="badge">
         <button (click)="navegarParaFinalizados()" mat-stroked-button color="primary" matBadge="{{ closed }}">Tasks finalizadas</button>
     </div>
--->
+
     <button routerLink="create" class="novo-todo mat-elevation-z8" mat-stroked-button color="primary">Solicitação de Ferramenta(s) e/ou Reparo(s)</button>
 
     <div class="content" *ngFor="let item of list">
@@ -12,8 +12,22 @@
             <mat-card-header>
                 <mat-card-title>{{ item.titulo }}</mat-card-title>
                 <mat-card-subtitle>{{ item.descricao }}</mat-card-subtitle>
+                <mat-card-subtitle>{{ item.ordem }}</mat-card-subtitle>
+
+                <!--
+                <div class="note-contents">
+                    <h3>Selecione a data de finalização da solicitação: </h3>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                -->
+
             </mat-card-header>
-            <!--
+
             <div class="actions">
 
                 <button (click)="finalizar(item)" mat-mini-fab color="primary">
@@ -24,9 +38,10 @@
                 </button>
                 <button (click)="delete(item.id)" mat-mini-fab color="warn">
                     <mat-icon>delete</mat-icon>
-                </button> 
-    </div>
-    -->
+                </button>
+            </div>
+
+
         </mat-card>
     </div>
 </div>

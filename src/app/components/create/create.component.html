@@ -10,13 +10,18 @@
 
     <div class="forms">
         <mat-form-field class="form">
-            <mat-label>Titulo</mat-label>
+            <mat-label>Título</mat-label>
             <input [(ngModel)]="todo.titulo" name="todo.titulo" matInput placeholder="Ex. Estudar Spring">
         </mat-form-field>
 
         <mat-form-field class="form">
             <mat-label>Descrição</mat-label>
             <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput placeholder="Ex. Estudar Spring Boot 2">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Ordem do Produto</mat-label>
+            <input [(ngModel)]="todo.ordem" name="todo.ordem" matInput placeholder="Ex. Estudar Spring Boot 2">
         </mat-form-field>
     </div>
 

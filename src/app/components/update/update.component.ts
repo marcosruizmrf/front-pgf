@@ -13,6 +13,7 @@ export class UpdateComponent implements OnInit {
   todo: Todo = {
     titulo: '',
     descricao: '',
+    ordem: '',
     dataParaFinalizar: new Date(),
     finalizado: false
   }

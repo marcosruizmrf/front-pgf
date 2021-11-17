@@ -1,5 +1,5 @@
 <form>
-    <h1>ATUALIZANDO TO-DO</h1>
+    <h1>ATUALIZANDO A SOLICITAÇÃO</h1>
 
     <mat-form-field class="data-finalizar" appearance="fill">
         <mat-label>DATA PARA FINALIZAR</mat-label>
@@ -17,6 +17,11 @@
         <mat-form-field class="form">
             <mat-label>Descrição</mat-label>
             <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput placeholder="Ex. Estudar Spring Boot 2">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Ordem do Produto</mat-label>
+            <input [(ngModel)]="todo.ordem" name="todo.ordem" matInput placeholder="Ex. Estudar Spring Boot 2">
         </mat-form-field>
     </div>
 

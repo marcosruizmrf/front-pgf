@@ -19,6 +19,12 @@
     width: 100%;
 }
 
+.note-contents {
+    margin-top: 0rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .content {
     width: 100%
 }
@@ -26,11 +32,17 @@
 .novo-todo {
     width: 100%;
     margin-top: 3rem;
+    margin-bottom: 0;
 }
 
 mat-card {
     margin-top: .8rem;
     padding: .5rem;
+}
+
+.h3 {
+    justify-content: center;
+    align-items: center;
 }
 
 p {

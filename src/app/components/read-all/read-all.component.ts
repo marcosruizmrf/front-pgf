@@ -3,12 +3,26 @@ import { Router } from "@angular/router";
 import { Todo } from "src/app/models/todo";
 import { TodoService } from "src/app/services/todo.service";
 
+/** @title Basic datepicker */
+
+export class DatepickerOverviewExample {}
+
+
 @Component({
   selector: "app-read-all",
   templateUrl: "./read-all.component.html",
   styleUrls: ["./read-all.component.css"],
 })
+
 export class ReadAllComponent implements OnInit {
+
+  todo: Todo = {
+    titulo: '',
+    descricao: '',
+    ordem: '',
+    dataParaFinalizar: new Date(),
+    finalizado: false
+  }
   closed = 0;
 
   list: Todo[] = [];
@@ -54,4 +68,8 @@ export class ReadAllComponent implements OnInit {
   navegarParaFinalizados(): void {
     this.router.navigate(["finalizados"]);
   }
+
+  
+
 }
+

@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Taks finalizadas</h1>
+    <h1>Solicitações finalizadas</h1>
     <div class="badge">
         <button (click)="voltar()" at-stroked-button color="primary">Voltar</button>
     </div>
@@ -10,6 +10,8 @@
             <mat-card-header>
                 <mat-card-title>{{ item.titulo }}</mat-card-title>
                 <mat-card-subtitle>{{ item.descricao }}</mat-card-subtitle>
+                <mat-card-subtitle>{{ item.ordem }}</mat-card-subtitle>
+
             </mat-card-header>
         </mat-card>
 
